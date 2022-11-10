@@ -3,7 +3,7 @@
 body {
     background: #ffffff;
     color: #070707;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: normal;
     font-family: 'roboto';
     margin: 0;
@@ -11,8 +11,10 @@ body {
     padding: 0;
 }
 
+
+
 .container {
-    max-width: 65%;
+    width: 65%;
     align-content: center;
     align-self: center;
     align-items: center;
@@ -20,14 +22,54 @@ body {
     margin: auto;
 }
 
-table {
-    margin: auto;
+.adobe-table {
+    display:flex;
+    margin: 60px;
 }
 
+.adobe-elements {
+    margin: auto;
+    margin-top: 0;
+    color:#828282;
+}
+
+.adobe-elements div {
+    padding-top: 16px;
+}
+
+@media (max-width: 1000) {
+    .adobe-table {
+        display: block
+    }
+}
+
+.photo {
+    width: 65%;
+}
+
+.menu {
+    position: fixed;
+    background: #ffffff;
+    width: 65%;
+}
 
 .menu li {
+    font-size: 18px;
+    width: 15%;
     display: inline-block;
-    margin: 15px 5%;
+    padding: 10 2.25%;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    color: #000000;
+    background: #d3d3d3;
+}
+
+ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
@@ -37,17 +79,70 @@ ul li {
 }
 
 .above-photo {
-    display: inline;
+    vertical-align: middle;
+    display: flex;
+}
+
+.above-photo li {
+    display:flex;
+}
+
+.DN {
+    font-size: 47px;
+    font-weight: bold;
+}
+
+.under {
+    margin-bottom: 50px;
+    text-decoration: underline;
 }
 
 .fa-star {
     color: #e5e5e5;
 }
 
+h3 {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
 .checked {
     color: #070707;
 }
 
+.screen1 {
+    background: #ffffff;
+    padding: 60px;
+}
+
 .screen2 {
     background: #f6f6f6;
+    padding: 60px;
+}
+
+.gray {
+    color: #828282;
+}
+
+.icon {
+    padding: 30px;
+}
+
+.empty {
+    height: 1px;
+}
+
+.btn {
+    margin: 30px;
+    background: black;
+    color: #ffffff;
+    border: none;
+    font-family: inherit;
+    height: 42px;
+    width: 180.75px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
 }
